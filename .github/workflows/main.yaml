@@ -28,7 +28,7 @@ jobs:
 
       - name: Install and Create Readme 🔧
         run: |
-          npm ci
+          npm install
           node index.js
 
       - name: Commit and Push new README.md to the repository
