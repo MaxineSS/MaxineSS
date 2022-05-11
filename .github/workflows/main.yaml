@@ -26,10 +26,11 @@ jobs:
           path: ~/.npm
           key: ${{ runner.os }}-js-${{ hashFiles('package-lock.json') }}
 
-      - name: Install and Create Readme 🔧
-        run: |
-          npm install
-          node index.js
+      - name: Install 🔧
+        run: npm install
+
+      - name: Generate README 📃
+        run: node index.js
 
       - name: Commit and Push new README.md to the repository
         uses: mikeal/publish-to-github-action@master
