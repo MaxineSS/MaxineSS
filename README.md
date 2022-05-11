@@ -1,2 +1,2 @@
-My name is Maxine you can also calle me Sejin 세진.
-Today is Tuesday, May 10, 10:44 PM PDT.
+My name is Maxine.
+Today is Tuesday, May 10, 11:52 PM PDT.
