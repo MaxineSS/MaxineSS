@@ -23,7 +23,7 @@ jobs:
       - name: Cache dependencies and Build outputs to improve workflow execution time.
         uses: actions/cache@v3
         with:
-          path: ~/.npm
+          path: node_modules
           key: ${{ runner.os }}-js-${{ hashFiles('package-lock.json') }}
 
       - name: Install 🔧
@@ -36,3 +36,4 @@ jobs:
         uses: mikeal/publish-to-github-action@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH_NAME: 'main'
